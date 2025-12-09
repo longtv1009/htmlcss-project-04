@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #000958;
+    --secondary-color: #656689;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+.container {
+    width: 1170px;
+    max-width: calc(100% -48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading {
+    color: var(--primary-color);
+}
+
+.heading.h1 {
+    font-size: 6.6rem;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.heading.h2 {
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.19;
+}
