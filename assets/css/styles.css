@@ -4,7 +4,8 @@
 
 :root {
     --primary-color: #000958;
-    --secondary-color: #656689;
+    --secondary-color: #ff5b2e;
+    --third-color: #656689;
 }
 
 html,
@@ -33,18 +34,96 @@ a {
     text-decoration: none;
 }
 
-.heading {
+.section__heading {
     color: var(--primary-color);
-}
-
-.heading.h1 {
-    font-size: 6.6rem;
-    font-weight: 800;
-    line-height: 1.15;
-}
-
-.heading.h2 {
+    font-family: "Sora", sans-serif;
     font-size: 5.2rem;
     font-weight: 700;
     line-height: 1.19;
+}
+
+.section__desc {
+    color: var(--third-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87;
+}
+
+.btn {
+    --height: 56px;
+
+    display: inline-block;
+    min-width: 189px;
+    height: var(--height);
+    padding: 0 20px;
+    border-radius: 99px;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: var(--height);
+}
+
+/* Header */
+.header {
+    padding-top: 18px;
+    background: #fffaf5;
+}
+
+.header--fixed {
+    position: sticky;
+    top: -18px;
+    z-index: 1;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__link {
+    display: inline-block;
+    padding: 4px 18px;
+    color: #5e6085;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.nav__link::before {
+    display: block;
+    height: 0;
+    content: attr(title);
+    font-weight: 600;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.nav__link--active,
+.nav__link:hover {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.signup__btn {
+    --height: 50px;
+
+    min-width: 117px;
+    border: 1px solid rgba(0, 9, 88, 0.7);
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.signup__btn:hover {
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+    color: #fff;
 }
